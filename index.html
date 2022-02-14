@@ -9,11 +9,140 @@
         crossorigin="anonymous"
         />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"/>
+        <link rel="stylesheet" href="css/main.css">
         <title>Bootstrap 5 Site</title>
     </head>
     <body>
-        <main class="container">
-            <h1>Headline</h1>
+        <header class="contianer-fluid ps-3 pe-3 pt-1">
+            <nav class="fs-5 pt-2 navbar navbar-expand">
+                <h1 class="fs-2">ZipTrip</h1>
+                <div class="d-flex justify-content-between w-100 mt-2">
+                    <ul class="navbar-nav list-unstyled ms-4">
+                        <li class="d-none d-sm-inline nav-item ms-2"><a href=#>Flights</a></li>
+                        <li class="d-none d-sm-inline nav-item ms-2"><a href=#>Hotels</a></li>
+                        <li class="d-none d-sm-inline nav-item ms-2"><a href=#>Transportation</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="d-none d-sm-inline nav-item ms-1"><a href=#>USD</a></li>
+                        <li class="d-none d-sm-inline nav-item ms-1"><a href=#>EN</a></li>
+                        <li class="list-inline-item ms-1"><button>Sign Up</button></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="container-fluid hero d-flex justify-content-center justify-content-md-between">
+                <article class="fieldbox align-self-center ms-5">
+                    <ul class="nav nav-pills text-center">
+                        <li class="nav-link active" aria-current="true">Packages</li>
+                        <li class="nav-link">Flights</li>
+                        <li class="nav-link">Hotels</li>
+                    </ul>
+                    <form class="p-3">
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <label class="form-label" for="destination">Destination</label>
+                                <input class="form-text mb-3 destination" type="text" name="destination" placeholder="Destination" required="required">
+                            </div>
+                            <div class="d-flex flex-column ms-3">
+                                <label class="form-label" for="guests">Guests</label>
+                                <input class="form-text mb-3 guests" type="text" name="Guests" placeholder="Guests" required="required">
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column">
+                                <label class="form-label" for="depart">Depart</label>
+                                <input class="form-text mb-3 depart" type="date" name="depart" required="required">
+                            </div>
+                            <div class="d-flex flex-column ms-3">
+                                <label class="form-label" for="arrive">Arrive</label>
+                                <input class="form-text mb-3 arrive" type="date" name="arrive" required="required">
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <button class="align-self-center me-5 d-none d-md-block">Browse Agents</button>
+            </section>
+            <section>
+                <h3>Agents</h3>
+                <article>
+                    <div class="headshot">
+                        <p>Celine</p>
+                    </div>
+                    <div class="headshot">
+                        <p>Charlie</p>
+                    </div>
+                    <div class="headshot">
+                        <p>Judith</p>
+                    </div>
+                    <div class="headshot">
+                        <p>Jordan</p>
+                    </div>
+                    <div class="headshot">
+                        <p>Abdul</p>
+                    </div>
+                    <div class="headshot">
+                        <p>Kyan</p>
+                    </div>
+                    <div class="headshot">
+                        <p>Kelsi</p>
+                    </div>
+                    <div class="headshot">
+                        <p>Zach</p>
+                    </div>
+                </article>
+            </section>
+            <section class="adcopy container-fluid d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-between w-75">
+                <article>
+                    <h3>Find the best agents with ZipTrip</h3>
+                    <p>During the era of COVID-19 and corresponding lockdowns, it can be difficult to stay abreast of social distancing and travel restrictions. It feels like the stress and complexity of planning the perfect vacation got even more precarious. ZipTrip allows you to search for and hire travel agents from our team as well as other agencies.  They work tirelessly to provide a sense of predictability during these turbulent times. Our commitment to not just helping you plan your vacation, but also protecting it, is what sets us apart from the rest.</p>
+                </article>
+                <article class="ms-md-5">
+                    <h3>Booking is easy</h3>
+                    <p>ZipTrip functions as both a travel agency and a search engine. We compile hotels, news, and reviews to help you make the most informed choice possible. We also compile stories from social media such as Instagram and Tiktok to help you keep up with hot spots. ZipTrip has agreements with brands such as Marriott and Hilton to make sure you always get the best deals.</p>
+                </article>
+            </section>
+            <div>
+                <p>Did you know that, in Iran, the new year starts...</p>
+                <p>...in spring?</p>
+            </div>
+            <div>
+                <button>Get Started</button>
+            </div>
+            <footer class="container-fluid d-flex justify-content-between pt-4">
+                <div class="d-flex">
+                    <div class="">
+                        <h3>ZipTrip</h3>
+                        <div class="socialmedia d-flex">
+                            <p>empty</p>
+                            <p class="ms-2">empty</p>
+                            <p class="ms-2">empty</p>
+                        </div>
+                    </div>
+                    <div class="columns d-flex ms-5">
+                        <div class="me-4 d-flex flex-column">
+                            <a href=#>Help</a>
+                            <a href=#>Feedback</a>
+                            <a href=#>Privacy</a>
+                        </div>
+                        <div class="me-4 d-flex flex-column">
+                            <a href=#>About</a>
+                            <a href=#>Disclaimers</a>
+                            <a href=#>Statistics</a>
+                        </div>
+                        <div class="me-4 d-flex flex-column">
+                            <a href=#>License</a>
+                            <a href=#>Cookies</a>
+                            <a href=#>Jobs</a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <label class="form-label" for="email">Sign up for our newsletter!</label>
+                            <input class="form-text mb-3 email" type="email" name="email" placeholder="Email Here" required="required">
+                        </div>
+                    </div>
+                </div>
+                <p class="p-5 float-right">@2022 ZipTrip</p>
+            </footer>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"

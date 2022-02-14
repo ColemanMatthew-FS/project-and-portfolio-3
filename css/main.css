@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+header, main, footer {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+main {
+  color: white;
+  background-color: #323232;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  background-color: #fff6cb;
+  color: #6d6d6d;
+}
+
+header button {
+  background-color: #323232;
+  color: white;
+  border-style: none;
+  border-radius: .5rem;
+  font-weight: bold;
+  padding: .1rem 1rem .1rem 1rem;
+}
+
+.nav-link.active {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #6d6d6d !important;
+  border-radius: 0 !important;
+}
+
+.nav-link {
+  background-color: #efefef !important;
+  color: #6d6d6d !important;
+  border-color: #efefef !important;
+  border-radius: 0 !important;
+  width: calc(100%/3);
+}
+
+.hero {
+  height: 20rem;
+  background: no-repeat center/cover url("../assets/photos/pexels-samer-daboul-8190433.jpg");
+}
+
+button {
+  background-color: #323232;
+  color: white;
+  border-style: none;
+  border-radius: .5rem;
+  font-weight: bold;
+  padding: .1rem 1rem .1rem 1rem;
+  max-height: 2.5rem;
+}
+
+form {
+  background-color: #ffffff;
+}
+
+.fieldbox {
+  color: #6d6d6d;
+}
+
+.adcopy {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.adcopy article {
+  width: 75%;
+  max-width: 35rem;
+}
+
+footer {
+  background-color: #565656;
+  color: #ffffff;
+  max-height: 7rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.socialmedia {
+  font-size: 0;
+}
+
+.socialmedia p:nth-of-type(1):before {
+  font-size: 1.25rem;
+  font-family: "bootstrap-icons";
+  content: "\F344";
+}
+
+.socialmedia p:nth-of-type(2):before {
+  font-size: 1.25rem;
+  font-family: "bootstrap-icons";
+  content: "\F5EF";
+}
+
+.socialmedia p:nth-of-type(3):before {
+  font-size: 1.25rem;
+  font-family: "bootstrap-icons";
+  content: "\F437";
+}
+
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("./fonts/bootstrap-icons.woff2?524846017b983fc8ded9325d94ed40f3") format("woff2"), url("./fonts/bootstrap-icons.woff?524846017b983fc8ded9325d94ed40f3") format("woff");
+}
+/*# sourceMappingURL=main.css.map */

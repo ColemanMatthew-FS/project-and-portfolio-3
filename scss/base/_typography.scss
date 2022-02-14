@@ -1,0 +1,14 @@
+header, main, footer {
+    font-family: "Source Sans Pro", sans-serif;
+}
+main {
+    color: white;
+    background-color: $color-dark;
+}
+ul {
+    margin: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}

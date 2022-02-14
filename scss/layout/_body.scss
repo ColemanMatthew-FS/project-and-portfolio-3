@@ -1,0 +1,40 @@
+.nav-link.active {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    color: $color-darkish !important;
+    border-radius: 0 !important;
+}
+.nav-link {
+    background-color: $color-grey !important;
+    color: $color-darkish !important;
+    border-color: $color-grey !important;
+    border-radius: 0 !important;
+    width: calc(100%/3);
+}
+.hero {
+    height: 20rem;
+    background: no-repeat center/cover url("../assets/photos/pexels-samer-daboul-8190433.jpg");
+}
+button {
+    background-color: $color-dark;
+    color: white;
+    border-style: none;
+    border-radius: .5rem;
+    font-weight: bold;
+    padding: .1rem 1rem .1rem 1rem;
+    max-height: 2.5rem;
+}
+form {
+    background-color: #ffffff; 
+}
+.fieldbox {
+    color: $color-darkish;
+}
+.adcopy {
+    background-color: #ffffff;
+    color: $color-dark;
+    article {
+        width: 75%;
+        max-width: 35rem;
+    }
+}
