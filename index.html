@@ -10,7 +10,7 @@
         />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"/>
         <link rel="stylesheet" href="css/main.css">
-        <title>Bootstrap 5 Site</title>
+        <title>ZipTrip Home</title>
     </head>
     <body>
         <header class="contianer-fluid ps-3 pe-3 pt-1">
@@ -25,94 +25,122 @@
                     <ul class="list-unstyled">
                         <li class="d-none d-sm-inline nav-item ms-1"><a href=#>USD</a></li>
                         <li class="d-none d-sm-inline nav-item ms-1"><a href=#>EN</a></li>
-                        <li class="list-inline-item ms-1"><button>Sign Up</button></li>
+                        <li class="list-inline-item ms-1"><button type="button" data-bs-toggle="modal" data-bs-target="#loginmodal">Sign Up</button></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main>
-            <section class="container-fluid hero d-flex justify-content-center justify-content-md-between">
-                <article class="fieldbox align-self-center ms-5">
+            <div class="modal fade" id="loginmodal" tabindex="-1">
+                <div class="modal-dialog d-flex flex-column align-items-center">
+                    <div class="modal-content d-flex flex-column align-items-center">
+                        <div class="modal-header d-flex justify-content-center">
+                            <h2 class="modal-title">Sign Up</h2>
+                        </div>
+                        <form class="modal-body d-flex flex-column">
+                            <div class="input-group w-100">
+                                <label class="formitem" for="emailLogin">Email:</label>
+                                <input type="email" class="form-text w-100" id="emailLogin" required="required">
+                            </div>
+                            <div class="input-group w-100">
+                                <label class="formitem" for="password">Password:</label>
+                                <input type="text" class="form-text w-100" id="password" required="required">
+                            </div>
+                            <button type="submit" class="align-self-center mt-4" id="submitLogin">Enter</button>
+                        </form>
+                        <p>Continue With:</p>
+                        <button class="socialmediabuttons d-flex align-items-center justify-content-center">Google</button>
+                        <button class="socialmediabuttons d-flex align-items-center justify-content-center">Facebook</button>
+                        <button class="socialmediabuttons d-flex align-items-center justify-content-center">Apple</button>
+                        <button class="mt-5 mb-4" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <header class="container-fluid hero d-flex justify-content-center justify-content-md-between">
+                <div class="fieldbox align-self-center ms-5">
                     <ul class="nav nav-pills text-center">
                         <li class="nav-link active" aria-current="true">Packages</li>
                         <li class="nav-link">Flights</li>
                         <li class="nav-link">Hotels</li>
                     </ul>
-                    <form class="p-3">
+                    <form class="p-3 d-flex flex-wrap">
                         <div class="d-flex">
-                            <div class="d-flex flex-column">
+                            <div class="d-flex flex-column formitem">
                                 <label class="form-label" for="destination">Destination</label>
-                                <input class="form-text mb-3 destination" type="text" name="destination" placeholder="Destination" required="required">
+                                <input class="form-text mb-3" id="destination" type="text" name="destination" placeholder="Destination" required="required">
                             </div>
-                            <div class="d-flex flex-column ms-3">
+                            <div class="d-flex flex-column ms-3 formitem">
                                 <label class="form-label" for="guests">Guests</label>
-                                <input class="form-text mb-3 guests" type="text" name="Guests" placeholder="Guests" required="required">
+                                <input class="form-text mb-3" id="guests" type="text" name="guests" placeholder="Guests" required="required">
                             </div>
                         </div>
                         <div class="d-flex">
-                            <div class="d-flex flex-column">
+                            <div class="d-flex flex-column formitem">
                                 <label class="form-label" for="depart">Depart</label>
-                                <input class="form-text mb-3 depart" type="date" name="depart" required="required">
+                                <input class="form-text mb-3" id="depart" type="date" name="depart" required="required">
                             </div>
-                            <div class="d-flex flex-column ms-3">
+                            <div class="d-flex flex-column ms-3 formitem">
                                 <label class="form-label" for="arrive">Arrive</label>
-                                <input class="form-text mb-3 arrive" type="date" name="arrive" required="required">
+                                <input class="form-text mb-3" id="arrive" type="date" name="arrive" required="required">
                             </div>
                         </div>
+                        <button type="submit" id="submit">Search</button>
                     </form>
-                </article>
-                <button class="align-self-center me-5 d-none d-md-block">Browse Agents</button>
-            </section>
+                </div>
+                <button class="align-self-center me-5 d-none d-md-block browseagents">Browse Agents</button>
+            </header>
             <section>
-                <h3>Agents</h3>
-                <article>
-                    <div class="headshot">
-                        <p>Celine</p>
+                <h2 class="text-center mt-4">Agents</h2>
+                <div class="agentsbox d-flex flex-wrap justify-content-center">
+                    <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                        <p class="fs-4">Celine</p>
                     </div>
-                    <div class="headshot">
-                        <p>Charlie</p>
+                    <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                        <p class="fs-4">Charlie</p>
                     </div>
-                    <div class="headshot">
-                        <p>Judith</p>
+                    <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                         <p class="fs-4">Judith</p>
+                     </div>
+                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                         <p class="fs-4">Jordan</p>
                     </div>
-                    <div class="headshot">
-                        <p>Jordan</p>
+                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                          <p class="fs-4">Abdul</p>
+                     </div>
+                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                         <p class="fs-4">Kyan</p>
                     </div>
-                    <div class="headshot">
-                        <p>Abdul</p>
+                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                          <p class="fs-4">Kelsi</p>
                     </div>
-                    <div class="headshot">
-                        <p>Kyan</p>
-                    </div>
-                    <div class="headshot">
-                        <p>Kelsi</p>
-                    </div>
-                    <div class="headshot">
-                        <p>Zach</p>
-                    </div>
-                </article>
+                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                         <p class="fs-4">Zach</p>
+                     </div>
+                </div>
             </section>
-            <section class="adcopy container-fluid d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-between w-75">
+            <div class="adcopy container-fluid d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-between w-100">
                 <article>
-                    <h3>Find the best agents with ZipTrip</h3>
-                    <p>During the era of COVID-19 and corresponding lockdowns, it can be difficult to stay abreast of social distancing and travel restrictions. It feels like the stress and complexity of planning the perfect vacation got even more precarious. ZipTrip allows you to search for and hire travel agents from our team as well as other agencies.  They work tirelessly to provide a sense of predictability during these turbulent times. Our commitment to not just helping you plan your vacation, but also protecting it, is what sets us apart from the rest.TESTESTEST</p>
+                    <h2>Find the best agents with ZipTrip</h2>
+                    <p>During the era of COVID-19 and corresponding lockdowns, it can be difficult to stay abreast of social distancing and travel restrictions. It feels like the stress and complexity of planning the perfect vacation got even more precarious. ZipTrip allows you to search for and hire travel agents from our team as well as other agencies.  They work tirelessly to provide a sense of predictability during these turbulent times. Our commitment to not just helping you plan your vacation, but also protecting it, is what sets us apart from the rest.</p>
                 </article>
                 <article class="ms-md-5">
-                    <h3>Booking is easy</h3>
+                    <h2>Booking is easy</h2>
                     <p>ZipTrip functions as both a travel agency and a search engine. We compile hotels, news, and reviews to help you make the most informed choice possible. We also compile stories from social media such as Instagram and Tiktok to help you keep up with hot spots. ZipTrip has agreements with brands such as Marriott and Hilton to make sure you always get the best deals.</p>
                 </article>
-            </section>
-            <div>
-                <p>Did you know that, in Iran, the new year starts...</p>
-                <p>...in spring?</p>
             </div>
-            <div>
-                <button>Get Started</button>
+            <div class="d-flex flex-column align-items-center">
+                <div class="adhook container-fluid d-flex justify-content-between w-75 mt-5">
+                    <p>Did you know that, in Iran, the new year starts...</p>
+                    <p>...in spring?</p>
+                </div>
+                <div class="hookbutton d-flex align-items-center justify-content-center mb-5 w-75">
+                    <button>Get Started</button>
+                </div>
             </div>
             <footer class="container-fluid d-flex justify-content-between pt-4">
                 <div class="d-flex">
                     <div class="">
-                        <h3>ZipTrip</h3>
+                        <h2>ZipTrip</h2>
                         <div class="socialmedia d-flex">
                             <p>empty</p>
                             <p class="ms-2">empty</p>
@@ -137,7 +165,7 @@
                         </div>
                         <div class="d-flex flex-column">
                             <label class="form-label" for="email">Sign up for our newsletter!</label>
-                            <input class="form-text mb-3 email" type="email" name="email" placeholder="Email Here" required="required">
+                            <input class="form-text mb-3" id="email" type="email" name="email" placeholder="Email Here" required="required">
                         </div>
                     </div>
                 </div>

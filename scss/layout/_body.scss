@@ -16,6 +16,14 @@
     background: no-repeat center/cover url("../assets/photos/pexels-samer-daboul-8190433.jpg");
 }
 button {
+    background-color: $color-main;
+    color: $color-dark;
+    border-style: none;
+    border-radius: 1rem;
+    padding: .1rem 1rem .1rem 1rem;
+    max-height: 2.5rem;
+}
+.browseagents {
     background-color: $color-dark;
     color: white;
     border-style: none;
@@ -25,7 +33,14 @@ button {
     max-height: 2.5rem;
 }
 form {
-    background-color: #ffffff; 
+    background-color: #ffffff;
+    max-width: 22rem;
+    button {
+        margin: auto;
+    }
+}
+.formitem{ 
+    max-width: 140px;
 }
 .fieldbox {
     color: $color-darkish;
@@ -33,8 +48,96 @@ form {
 .adcopy {
     background-color: #ffffff;
     color: $color-dark;
+    max-width: 75%;
     article {
         width: 75%;
         max-width: 35rem;
+    }
+}
+.headshot {
+    height: 250px;
+    width: 250px;
+    min-width: 250px;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 5rem #000;
+    &:nth-of-type(1) {
+        background: no-repeat center/cover url("../assets/photos/agents/pexels-anna-shvets-3727461.jpg");
+    }
+    &:nth-of-type(2) {
+        background: no-repeat center/cover url("../assets/photos/agents/pexels-andrea-piacquadio-842567.jpg");
+    }
+    &:nth-of-type(3) {
+        background: no-repeat center/cover url("../assets/photos/agents/pexels-ivan-samkov-4458554.jpg");
+    }
+    &:nth-of-type(4) {
+        background: no-repeat center/cover url("../assets/photos/agents/pexels-andrea-piacquadio-716411.jpg");
+    }
+    &:nth-of-type(5) {
+        background: no-repeat center/cover url("../assets/photos/agents/pexels-syed-qaarif-andrabi-11065148.jpg");
+    }
+    &:nth-of-type(6) {
+        background: no-repeat center/cover url("../assets/photos/agents/pexels-roman-odintsov-5667020.jpg");
+    }
+    &:nth-of-type(7) {
+        background: no-repeat center/cover url("../assets/photos/agents/pexels-mentatdgt-1346184.jpg");
+    }
+    &:nth-of-type(8) {
+        background: no-repeat center/cover url("../assets/photos/agents/pexels-linkedin-sales-navigator-2182970.jpg");
+    }
+}
+.agentsbox {
+    margin: 0rem 15rem 0rem 15rem;
+}
+.adhook {
+    background-color: $color-main;
+    color: $color-dark;
+    max-width: 35rem;
+}
+.hookbutton {
+    height: 15rem;
+    max-width: 35rem;
+    background: no-repeat center/cover url("../assets/photos/pexels-czapp-arpad-8743504.jpg");
+}
+.modal-dialog {
+    color: $color-darkish;
+    button {
+        margin: .3rem;
+        font-weight: bold;
+        color: $color-dark;
+        width: 7.5rem;
+        height: 2rem;
+    }
+}
+.modal-content {
+    background-color: #ffffff;
+    width: 65%;
+    div {
+        width:75%;
+    }
+}
+.socialmediabuttons {
+    &:nth-of-type(1) {
+        &:before {
+            font-size: 1rem;
+            font-family: "bootstrap-icons";
+            content: "\F3F0";
+            margin-right: .5rem;
+        }
+    }
+    &:nth-of-type(2) {
+        &:before {
+            font-size: 1rem;
+            font-family: "bootstrap-icons";
+            content: "\F344";
+            margin-right: .5rem;
+        }
+    }
+    &:nth-of-type(3) {
+        &:before {
+            font-size: 1rem;
+            font-family: "bootstrap-icons";
+            content: "\F437";
+            margin-right: .5rem;
+        }
     }
 }
