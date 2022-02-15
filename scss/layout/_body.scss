@@ -1,19 +1,68 @@
 .nav-link.active {
     background-color: #ffffff !important;
-    border-color: #ffffff !important;
+    border: none;
     color: $color-darkish !important;
     border-radius: 0 !important;
 }
+.nav-pills {
+    li {
+        background-color: $color-grey !important;
+        border: none;
+        border-radius: 0 !important;
+        width: calc(100%/3);
+    }
+}
 .nav-link {
-    background-color: $color-grey !important;
-    color: $color-darkish !important;
-    border-color: $color-grey !important;
-    border-radius: 0 !important;
-    width: calc(100%/3);
+    color: $color-darkish;
 }
 .hero {
     height: 20rem;
     background: no-repeat center/cover url("../assets/photos/pexels-samer-daboul-8190433.jpg");
+}
+.agentsHero {
+    height: 20rem;
+    background: no-repeat center/cover url("../assets/photos/pexels-joao-aguiar-7777900.jpg");
+    color: #ffffff;
+    h2 {
+        font-weight: 300;
+        font-size: 5rem;
+    }
+}
+.firstAgents {
+    h3 {
+        margin: 1rem;
+    }
+    img {
+        margin: 1rem;
+    }
+    p {
+        max-width: 20rem;
+        margin: 1rem;
+    }
+}
+.kelsi {
+    width: 100%;
+    div {
+        height: fit-content;
+        width: fit-content;
+    }
+}
+.lastAgent {
+    background-color: #ffffff;
+    color: $color-dark;
+    width: 90%;
+    h3 {
+        margin: 1rem;
+    }
+    img {
+        margin: 1rem;
+        max-height: 15rem;
+    }
+    p {
+        max-width: 20rem;
+        max-height: 7.5rem;
+        margin-bottom: 1rem;
+    }
 }
 button {
     background-color: $color-main;
@@ -22,6 +71,11 @@ button {
     border-radius: 1rem;
     padding: .1rem 1rem .1rem 1rem;
     max-height: 2.5rem;
+}
+.viewMoreButton {
+    font-weight: bold;
+    width: 25%;
+    height: 5rem;
 }
 .browseagents {
     background-color: $color-dark;
@@ -140,4 +194,33 @@ form {
             margin-right: .5rem;
         }
     }
+}
+.mapHero {
+    height: 20rem;
+    background: no-repeat center/cover url("../assets/photos/pexels-rudolf-kirchner-2759804.jpg");
+}
+.hotelPills {
+    li {
+        width: 15rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        border-radius: 1rem !important;
+        max-width: 15%;
+    }
+}
+.hotel {
+    background-color: #ffffff;
+    color: $color-darkish;
+    max-height: 15rem;
+    width: 25rem;
+    img {
+        height: 100%;
+    }
+
+}
+.hotelcontainer {
+    float: left;
+}
+iframe {
+    height: 50rem;
 }

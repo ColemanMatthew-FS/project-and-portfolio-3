@@ -10,7 +10,7 @@
         />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"/>
         <link rel="stylesheet" href="css/main.css">
-        <title>ZipTrip Home</title>
+        <title>ZipTrip Agents</title>
     </head>
     <body>
         <header class="ps-3 pe-3 pt-1">
@@ -56,86 +56,85 @@
                     </div>
                 </div>
             </div>
-            <header class="container-fluid hero d-flex justify-content-center justify-content-md-between">
-                <div class="fieldbox align-self-center ms-5">
-                    <ul class="nav nav-pills text-center">
-                        <li class="nav-item"><a class="nav-link active" aria-current="true" href="#">Packages</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flights</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Hotels</a></li>
-                    </ul>
-                    <form class="p-3 d-flex flex-wrap">
-                        <div class="d-flex">
-                            <div class="d-flex flex-column formitem">
-                                <label class="form-label" for="destination">Destination</label>
-                                <input class="form-text mb-3" id="destination" type="text" name="destination" placeholder="Destination" required="required">
-                            </div>
-                            <div class="d-flex flex-column ms-3 formitem">
-                                <label class="form-label" for="guests">Guests</label>
-                                <input class="form-text mb-3" id="guests" type="text" name="guests" placeholder="Guests" required="required">
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="d-flex flex-column formitem">
-                                <label class="form-label" for="depart">Depart</label>
-                                <input class="form-text mb-3" id="depart" type="date" name="depart" required="required">
-                            </div>
-                            <div class="d-flex flex-column ms-3 formitem">
-                                <label class="form-label" for="arrive">Arrive</label>
-                                <input class="form-text mb-3" id="arrive" type="date" name="arrive" required="required">
-                            </div>
-                        </div>
-                        <button type="submit" id="submit">Search</button>
-                    </form>
-                </div>
-                <button class="align-self-center me-5 d-none d-md-block browseagents">Browse Agents</button>
+            <header class="container-fluid agentsHero d-flex justify-content-center">
+                <h2 class="text-center mt-5">Agents</h2>
             </header>
-            <section>
-                <h2 class="text-center mt-4">Agents</h2>
-                <div class="agentsbox d-flex flex-wrap justify-content-center">
-                    <div class="headshot m-4 d-flex align-items-end justify-content-center">
-                        <p class="fs-4">Celine</p>
+            <div class="firstAgents m-5 d-flex">
+                <div class="kelsi d-flex me-3 justify-content-center flex-wrap">
+                    <div class="agenthead">
+                        <h3>Kelsi</h3>
+                        <p>Hailing from Manchester, UK, she specializes in trips to the Britiss Isles</p>
+                        <img class="flex-grow-1" src="assets/photos/agents/pexels-mentatdgt-1346184.jpg" alt="A woman sitting at a laptop">
+                        <p>When asked about her favorite place in the United Kingdom, she said "If I had to pick one, it would have to be Wales during the summertime. It's such a gorgeous combination of misty dawns and thick, foggy forests. It truly feels like a place older than time. Did you know that the name of the Cambrian epoch comes from the Latin name for Wales?"</p>
                     </div>
-                    <div class="headshot m-4 d-flex align-items-end justify-content-center">
-                        <p class="fs-4">Charlie</p>
+                    <div class="agentDiv">
+                        <img src="assets/photos/pexels-marta-wave-5875873.jpg" alt="An English countryside">
+                        <p class="fs-3">Lakes District</p>
                     </div>
-                    <div class="headshot m-4 d-flex align-items-end justify-content-center">
-                         <p class="fs-4">Judith</p>
-                     </div>
-                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
-                         <p class="fs-4">Jordan</p>
+                    <div class="agentDiv">
+                        <img src="assets/photos/pexels-david-pickup-10698259.jpg" alt="A sign on the English Coast">
+                        <p class="fs-3">Penzance</p>
+                        <p>Once the center of the British Empire, the United Kingdom of Great Britain and Northern Ireland is home to a diverse array of civic, social, and geographic history. Points of interest include the Lakes District, the Peaks District, and the Scottish Highlands</p>
                     </div>
-                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
-                          <p class="fs-4">Abdul</p>
-                     </div>
-                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
-                         <p class="fs-4">Kyan</p>
-                    </div>
-                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
-                          <p class="fs-4">Kelsi</p>
-                    </div>
-                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
-                         <p class="fs-4">Zach</p>
-                     </div>
                 </div>
-            </section>
-            <div class="adcopy container-fluid d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-between w-100">
-                <article>
-                    <h2>Find the best agents with ZipTrip</h2>
-                    <p>During the era of COVID-19 and corresponding lockdowns, it can be difficult to stay abreast of social distancing and travel restrictions. It feels like the stress and complexity of planning the perfect vacation got even more precarious. ZipTrip allows you to search for and hire travel agents from our team as well as other agencies.  They work tirelessly to provide a sense of predictability during these turbulent times. Our commitment to not just helping you plan your vacation, but also protecting it, is what sets us apart from the rest.</p>
-                </article>
-                <article class="ms-md-5">
-                    <h2>Booking is easy</h2>
-                    <p>ZipTrip functions as both a travel agency and a search engine. We compile hotels, news, and reviews to help you make the most informed choice possible. We also compile stories from social media such as Instagram and Tiktok to help you keep up with hot spots. ZipTrip has agreements with brands such as Marriott and Hilton to make sure you always get the best deals.</p>
-                </article>
+                <div class="kelsi ms-3 d-flex justify-content-center flex-wrap">
+                    <div class="agenthead">
+                        <h3>Abdul</h3>
+                        <p>Explore the ancient histories of the Middle East and North Africa, from Algeria to Saudi Arabia, and beyond</p>
+                        <img src="assets/photos/agents/pexels-syed-qaarif-andrabi-11065148.jpg" alt="A man rowing a boat">
+                    </div>
+                    <div class="agentDiv">
+                        <img src="assets/photos/pexels-senuscape-1598338.jpg" alt="A Kuwait cityscape">
+                        <p class="fs-3">Kuwait</p>
+                    </div>
+                    <p>The northernmost country in Africa, Tunisia contains the Eastern reaches of the atlas mounts</p>
+                    <div class="agentDiv">
+                        <img src="assets/photos/pexels-safeer-ahammed-4055277.jpg" alt="A mosque in Sharjah">
+                        <p class="fs-3">Sharjah</p>
+                    </div>
+                    <div class="agentDiv">
+                        <img src="assets/photos/pexels-simon-berger-815503.jpg" alt="A sunset in Egypt">
+                        <p class="fs-3">Egypt</p>
+                        <p>Egypt is one of the worlds' only transcontinental countries, and one of its oldest cultures. Although present-day Egypt bears little resemblance to the Egypt of the Roman Empire, which in turn bore relatively little to the dynasties of old, all this history can be seen in the country today.</p>
+                    </div>
+                </div>
             </div>
-            <div class="d-flex flex-column align-items-center">
-                <div class="adhook container-fluid d-flex justify-content-between w-75 mt-5">
-                    <p>Did you know that, in Iran, the new year starts...</p>
-                    <p>...in spring?</p>
+            <div class="lastAgent container-fluid d-flex flex-wrap justify-content-center">
+                <div class="agentHead">
+                    <h3>Celine</h3>
+                    <p>Experience the unique climate, geography, and indigenous cultures of South America</p>
+                    <img src="assets/photos/agents/pexels-anna-shvets-3727461.jpg" alt="A woman">
                 </div>
-                <div class="hookbutton d-flex align-items-center justify-content-center mb-5 w-75">
-                    <button>Get Started</button>
+                <div class="agentDiv">
+                    <img src="assets/photos/la guajira tanenhaus flickr.jpg" alt="A family standing on a beach">
+                    <p class="fs-4">La Guajira Desert (ⒸTanenhaus)</p>
                 </div>
+                <div class="agentDiv">
+                    <img src="assets/photos/pexels-luis-dalvan-1684166.jpg" alt="A distant mountain range">
+                    <p class="fs-4">Patagonia</p>
+                </div>
+                <div class="agentDiv">
+                    <img src="assets/photos/pexels-roly-vasquez-592604.jpg" alt="A lakeside town">
+                    <p class="fs-4">Lake Titicaca</p>
+                </div>
+                <div class="agentDiv">
+                    <img src="assets/photos/laslajas arabsalam.jpg" alt="A church on a cliff face">
+                    <p class="fs-4">Las Lajas Shrine</p>
+                </div>
+                <div class="agentDiv">
+                    <img src="assets/photos/pexels-mikhail-nilov-7683246.jpg" alt="A jungle">
+                    <p class="fs-4">The Selva</p>
+                </div>
+                <div class="agentDiv">
+                    <img src="assets/photos/pexels-joao-aguiar-7777900.jpg" alt="A car in a desert">
+                    <p class="fs-4">Altiplano</p>
+                </div>
+                <div class="w-100 d-flex justify-content-center">
+                    <p>"All those who wander, are not lost"</p>
+                </div>
+            </div>
+            <div class="m-5 d-flex justify-content-center">
+                <button class="viewMoreButton fs-4">View More</button>
             </div>
             <footer class="container-fluid d-flex justify-content-between pt-4">
                 <div class="d-flex">
