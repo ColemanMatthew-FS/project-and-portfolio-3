@@ -84,10 +84,10 @@
                                 <input class="form-text mb-3" id="arrive" type="date" name="arrive" required="required">
                             </div>
                         </div>
-                        <button type="submit" id="submit">Search</button>
+                        <button type="submit" id="submit" type="button" formaction="map.html">Search</button>
                     </form>
                 </div>
-                <button class="align-self-center me-5 d-none d-md-block browseagents">Browse Agents</button>
+                <button class="align-self-center me-5 d-none d-md-block browseagents" type="button" onclick="location.href='agents.html'">Browse Agents</button>
             </header>
             <section>
                 <h2 class="text-center mt-4">Agents</h2>
@@ -134,7 +134,7 @@
                     <p>...in spring?</p>
                 </div>
                 <div class="hookbutton d-flex align-items-center justify-content-center mb-5 w-75">
-                    <button>Get Started</button>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginmodal">Get Started</button>
                 </div>
             </div>
             <footer class="container-fluid d-flex justify-content-between pt-4">
