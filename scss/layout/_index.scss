@@ -1,3 +1,4 @@
+//Controls the styling for nav links and pills
 .nav-link.active {
     background-color: #ffffff !important;
     border: none;
@@ -15,55 +16,12 @@
 .nav-link {
     color: $color-darkish;
 }
+//Styles the hero on the main page
 .hero {
     height: 20rem;
     background: no-repeat center/cover url("../assets/photos/pexels-samer-daboul-8190433.jpg");
 }
-.agentsHero {
-    height: 20rem;
-    background: no-repeat center/cover url("../assets/photos/pexels-joao-aguiar-7777900.jpg");
-    color: #ffffff;
-    h2 {
-        font-weight: 300;
-        font-size: 5rem;
-    }
-}
-.firstAgents {
-    h3 {
-        margin: 1rem;
-    }
-    img {
-        margin: 1rem;
-    }
-    p {
-        max-width: 20rem;
-        margin: 1rem;
-    }
-}
-.kelsi {
-    width: 100%;
-    div {
-        height: fit-content;
-        width: fit-content;
-    }
-}
-.lastAgent {
-    background-color: #ffffff;
-    color: $color-dark;
-    width: 90%;
-    h3 {
-        margin: 1rem;
-    }
-    img {
-        margin: 1rem;
-        max-height: 15rem;
-    }
-    p {
-        max-width: 20rem;
-        max-height: 7.5rem;
-        margin-bottom: 1rem;
-    }
-}
+//Basic button styling
 button {
     background-color: $color-main;
     color: $color-dark;
@@ -72,11 +30,7 @@ button {
     padding: .1rem 1rem .1rem 1rem;
     max-height: 2.5rem;
 }
-.viewMoreButton {
-    font-weight: bold;
-    width: 25%;
-    height: 5rem;
-}
+//Styling for another specific button
 .browseagents {
     background-color: $color-dark;
     color: white;
@@ -86,6 +40,7 @@ button {
     padding: .1rem 1rem .1rem 1rem;
     max-height: 2.5rem;
 }
+//Basic form styling
 form {
     background-color: #ffffff;
     max-width: 22rem;
@@ -93,12 +48,14 @@ form {
         margin: auto;
     }
 }
+//Styling for items in a form
 .formitem{ 
     max-width: 140px;
 }
 .fieldbox {
     color: $color-darkish;
 }
+//Styling for the portion of the page starting with "Find the best agents with ZipTrip"
 .adcopy {
     background-color: #ffffff;
     color: $color-dark;
@@ -108,6 +65,11 @@ form {
         max-width: 35rem;
     }
 }
+//Styling for the boxes the contains the agents' heads
+.agentsbox {
+    margin: 0rem 15rem 0rem 15rem;
+}
+//ditto
 .headshot {
     height: 250px;
     width: 250px;
@@ -139,9 +101,7 @@ form {
         background: no-repeat center/cover url("../assets/photos/agents/pexels-linkedin-sales-navigator-2182970.jpg");
     }
 }
-.agentsbox {
-    margin: 0rem 15rem 0rem 15rem;
-}
+//Styling for the ad at the bottom of the main page
 .adhook {
     background-color: $color-main;
     color: $color-dark;
@@ -151,76 +111,4 @@ form {
     height: 15rem;
     max-width: 35rem;
     background: no-repeat center/cover url("../assets/photos/pexels-czapp-arpad-8743504.jpg");
-}
-.modal-dialog {
-    color: $color-darkish;
-    button {
-        margin: .3rem;
-        font-weight: bold;
-        color: $color-dark;
-        width: 7.5rem;
-        height: 2rem;
-    }
-}
-.modal-content {
-    background-color: #ffffff;
-    width: 65%;
-    div {
-        width:75%;
-    }
-}
-.socialmediabuttons {
-    &:nth-of-type(1) {
-        &:before {
-            font-size: 1rem;
-            font-family: "bootstrap-icons";
-            content: "\F3F0";
-            margin-right: .5rem;
-        }
-    }
-    &:nth-of-type(2) {
-        &:before {
-            font-size: 1rem;
-            font-family: "bootstrap-icons";
-            content: "\F344";
-            margin-right: .5rem;
-        }
-    }
-    &:nth-of-type(3) {
-        &:before {
-            font-size: 1rem;
-            font-family: "bootstrap-icons";
-            content: "\F437";
-            margin-right: .5rem;
-        }
-    }
-}
-.mapHero {
-    height: 20rem;
-    background: no-repeat center/cover url("../assets/photos/pexels-rudolf-kirchner-2759804.jpg");
-}
-.hotelPills {
-    li {
-        width: 15rem;
-        height: 2.5rem;
-        margin-right: 1rem;
-        border-radius: 1rem !important;
-        max-width: 15%;
-    }
-}
-.hotel {
-    background-color: #ffffff;
-    color: $color-darkish;
-    max-height: 15rem;
-    width: 25rem;
-    img {
-        height: 100%;
-    }
-
-}
-.hotelcontainer {
-    float: left;
-}
-iframe {
-    height: 50rem;
 }
