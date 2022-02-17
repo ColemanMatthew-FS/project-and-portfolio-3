@@ -32,13 +32,15 @@ button {
 }
 //Styling for another specific button
 .browseagents {
-    background-color: $color-dark;
-    color: white;
+    background-color: $color-main;
+    color: $color-dark;
     border-style: none;
     border-radius: .5rem;
     font-weight: bold;
+    font-size: 1.5rem;
     padding: .1rem 1rem .1rem 1rem;
-    max-height: 2.5rem;
+    width: 12.5rem;
+    height: 20rem;
 }
 //Basic form styling
 form {

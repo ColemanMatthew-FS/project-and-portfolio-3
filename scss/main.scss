@@ -1,13 +1,12 @@
 @import 'utils/vars';
 @import 'base/typography';
 @import 'layout/header';
-@import 'layout/body';
 @import 'layout/index';
 @import 'layout/agents';
 @import 'layout/map';
 @import 'layout/modal';
 @import 'layout/footer';
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@300;400;700&display=swap');
 @font-face {
     font-family: "bootstrap-icons";
     src: url("./fonts/bootstrap-icons.woff2?524846017b983fc8ded9325d94ed40f3") format("woff2"), url("./fonts/bootstrap-icons.woff?524846017b983fc8ded9325d94ed40f3") format("woff");
