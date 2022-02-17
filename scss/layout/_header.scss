@@ -1,12 +1,14 @@
 header {
     background-color: $color-light;
     color: $color-darkish;
-    button {
+    .btn {
         background-color: $color-dark;
         color: white;
         border-style: none;
         border-radius: .5rem;
         font-weight: bold;
         padding: .1rem 1rem .1rem 1rem;
+        font-size: 1.1rem;
+        min-height: 2.5rem;
     }
 }

@@ -30,13 +30,15 @@ header {
   color: #6d6d6d;
 }
 
-header button {
+header .btn {
   background-color: #323232;
   color: white;
   border-style: none;
   border-radius: .5rem;
   font-weight: bold;
   padding: .1rem 1rem .1rem 1rem;
+  font-size: 1.1rem;
+  min-height: 2.5rem;
 }
 
 .nav-link.active {
@@ -62,7 +64,7 @@ header button {
   background: no-repeat center/cover url("../assets/photos/pexels-samer-daboul-8190433.jpg");
 }
 
-button {
+.btn {
   background-color: #fff28f;
   color: #323232;
   border-style: none;
@@ -72,8 +74,8 @@ button {
 }
 
 .browseagents {
-  background-color: #fff28f;
-  color: #323232;
+  background-color: #fff28f !important;
+  color: #323232 !important;
   border-style: none;
   border-radius: .5rem;
   font-weight: bold;
@@ -88,7 +90,7 @@ form {
   max-width: 22rem;
 }
 
-form button {
+form .btn {
   margin: auto;
 }
 
@@ -271,7 +273,7 @@ iframe {
   color: #6d6d6d;
 }
 
-.modal-dialog button {
+.modal-dialog .btn {
   margin: .3rem;
   font-weight: bold;
   color: #323232;

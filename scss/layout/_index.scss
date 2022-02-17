@@ -22,7 +22,7 @@
     background: no-repeat center/cover url("../assets/photos/pexels-samer-daboul-8190433.jpg");
 }
 //Basic button styling
-button {
+.btn {
     background-color: $color-main;
     color: $color-dark;
     border-style: none;
@@ -32,8 +32,8 @@ button {
 }
 //Styling for another specific button
 .browseagents {
-    background-color: $color-main;
-    color: $color-dark;
+    background-color: $color-main !important;
+    color: $color-dark !important;
     border-style: none;
     border-radius: .5rem;
     font-weight: bold;
@@ -46,7 +46,7 @@ button {
 form {
     background-color: #ffffff;
     max-width: 22rem;
-    button {
+    .btn {
         margin: auto;
     }
 }
