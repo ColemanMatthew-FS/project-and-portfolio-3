@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"/>
+        <link rel="stylesheet" href="css/main.css">
+        <title>ZipTrip Home</title>
+    </head>
+    <body>
+        <!-- Reusable header -->
+        <header class="ps-3 pe-3 pt-1">
+            <nav class="fs-5 pt-2 navbar navbar-expand">
+                <!-- Main site header -->
+                <h1 class="fs-2">ZipTrip</h1>
+                <!-- This div contains the two halves of the links at the top -->
+                <div class="d-flex justify-content-between w-100 mt-2">
+                    <ul class="navbar-nav list-unstyled ms-4">
+                        <li class="d-none d-sm-inline nav-item ms-2"><a href=#>Flights</a></li>
+                        <li class="d-none d-sm-inline nav-item ms-2"><a href=#>Hotels</a></li>
+                        <li class="d-none d-sm-inline nav-item ms-2"><a href=#>Transportation</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="d-none d-sm-inline nav-item ms-1"><a href=#>USD</a></li>
+                        <li class="d-none d-sm-inline nav-item ms-1"><a href=#>EN</a></li>
+                        <li class="list-inline-item ms-1"><button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#loginmodal">Sign Up</button></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Reusable modal login screen -->
+            <div class="modal fade" id="loginmodal" tabindex="-1">
+                <div class="modal-dialog d-flex flex-column align-items-center">
+                    <div class="modal-content d-flex flex-column align-items-center">
+                        <div class="modal-header d-flex justify-content-center">
+                            <h2 class="modal-title">Sign Up</h2>
+                        </div>
+                        <form class="modal-body d-flex flex-column">
+                            <div class="input-group w-100">
+                                <label class="formitem" for="emailLogin">Email:</label>
+                                <input type="email" class="form-text w-100" id="emailLogin" required="required">
+                            </div>
+                            <div class="input-group w-100">
+                                <label class="formitem" for="password">Password:</label>
+                                <input type="text" class="form-text w-100" id="password" required="required">
+                            </div>
+                            <button type="submit" class="btn align-self-center mt-4" id="submitLogin">Enter</button>
+                        </form>
+                        <p>Continue With:</p>
+                        <button class="socialmediabuttons btn d-flex align-items-center justify-content-center">Google</button>
+                        <button class="socialmediabuttons btn d-flex align-items-center justify-content-center">Facebook</button>
+                        <button class="socialmediabuttons btn d-flex align-items-center justify-content-center">Apple</button>
+                        <button class="btn mt-5 mb-4" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <!-- This secondary header contains the form for the user to plan their trip, and the Browse Agents button -->
+            <header class="container-fluid hero d-flex justify-content-center justify-content-md-between">
+                <div class="fieldbox align-self-center ms-5">
+                    <ul class="nav nav-pills text-center">
+                        <li class="nav-item"><a class="nav-link active" aria-current="true" href="#">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Flights</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Hotels</a></li>
+                    </ul>
+                    <form class="p-3 d-flex flex-wrap">
+                        <div class="d-flex">
+                            <div class="d-flex flex-column formitem">
+                                <label class="form-label" for="destination">Destination</label>
+                                <input class="form-text mb-3" id="destination" type="text" name="destination" placeholder="Destination" required="required">
+                            </div>
+                            <div class="d-flex flex-column ms-3 formitem">
+                                <label class="form-label" for="guests">Guests</label>
+                                <input class="form-text mb-3" id="guests" type="text" name="guests" placeholder="Guests" required="required">
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex flex-column formitem">
+                                <label class="form-label" for="depart">Depart</label>
+                                <input class="form-text mb-3" id="depart" type="date" name="depart" required="required">
+                            </div>
+                            <div class="d-flex flex-column ms-3 formitem">
+                                <label class="form-label" for="arrive">Arrive</label>
+                                <input class="form-text mb-3" id="arrive" type="date" name="arrive" required="required">
+                            </div>
+                        </div>
+                        <button class="btn" type="submit" id="submit" formaction="map.html">Search</button>
+                    </form>
+                </div>
+                <button class="btn align-self-center me-5 d-none d-md-block browseagents" type="button" onclick="location.href='agents.html'">Browse Agents</button>
+            </header>
+            <!-- This section contains the headshots of the various travel agents -->
+            <section>
+                <h2 class="text-center mt-4">Agents</h2>
+                <div class="agentsbox d-flex flex-wrap justify-content-center">
+                    <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                        <p class="fs-4">Celine</p>
+                    </div>
+                    <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                        <p class="fs-4">Charlie</p>
+                    </div>
+                    <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                         <p class="fs-4">Judith</p>
+                     </div>
+                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                         <p class="fs-4">Jordan</p>
+                    </div>
+                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                          <p class="fs-4">Abdul</p>
+                     </div>
+                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                         <p class="fs-4">Kyan</p>
+                    </div>
+                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                          <p class="fs-4">Kelsi</p>
+                    </div>
+                     <div class="headshot m-4 d-flex align-items-end justify-content-center">
+                         <p class="fs-4">Zach</p>
+                     </div>
+                </div>
+            </section>
+            <!-- This contains the white portion of the page starting with "Find the best agents with ZipTrip" -->
+            <div class="adcopy container-fluid d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-between w-100">
+                <article>
+                    <h2>Find the best agents with ZipTrip</h2>
+                    <p>During the era of COVID-19 and corresponding lockdowns, it can be difficult to stay abreast of social distancing and travel restrictions. It feels like the stress and complexity of planning the perfect vacation got even more precarious. ZipTrip allows you to search for and hire travel agents from our team as well as other agencies.  They work tirelessly to provide a sense of predictability during these turbulent times. Our commitment to not just helping you plan your vacation, but also protecting it, is what sets us apart from the rest.</p>
+                </article>
+                <article class="ms-md-5">
+                    <h2>Booking is easy</h2>
+                    <p>ZipTrip functions as both a travel agency and a search engine. We compile hotels, news, and reviews to help you make the most informed choice possible. We also compile stories from social media such as Instagram and Tiktok to help you keep up with hot spots. ZipTrip has agreements with brands such as Marriott and Hilton to make sure you always get the best deals.</p>
+                </article>
+            </div>
+            <!-- This is for the add hook near the bottom -->
+            <div class="d-flex flex-column align-items-center">
+                <div class="adhook container-fluid d-flex justify-content-between w-75 mt-5">
+                    <p>Did you know that, in Iran, the new year starts...</p>
+                    <p>...in spring?</p>
+                </div>
+                <div class="hookbutton d-flex align-items-center justify-content-center mb-5 w-75">
+                    <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#loginmodal">Get Started</button>
+                </div>
+            </div>
+            <!-- Reusable footer -->
+            <footer class="container-fluid d-flex justify-content-between pt-4">
+                <div class="d-flex">
+                    <div class="">
+                        <h2>ZipTrip</h2>
+                        <div class="socialmedia d-flex">
+                            <p>empty</p>
+                            <p class="ms-2">empty</p>
+                            <p class="ms-2">empty</p>
+                        </div>
+                    </div>
+                    <div class="columns d-flex ms-5">
+                        <div class="me-4 d-flex flex-column">
+                            <a href=#>Help</a>
+                            <a href=#>Feedback</a>
+                            <a href=#>Privacy</a>
+                        </div>
+                        <div class="me-4 d-flex flex-column">
+                            <a href=#>About</a>
+                            <a href=#>Disclaimers</a>
+                            <a href=#>Statistics</a>
+                        </div>
+                        <div class="me-4 d-flex flex-column">
+                            <a href=#>License</a>
+                            <a href=#>Cookies</a>
+                            <a href=#>Jobs</a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <label class="form-label" for="email">Sign up for our newsletter!</label>
+                            <input class="form-text mb-3" id="email" type="email" name="email" placeholder="Email Here" required="required">
+                        </div>
+                    </div>
+                </div>
+                <p class="p-5 float-right">@2022 ZipTrip</p>
+            </footer>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    </body>
+</html>

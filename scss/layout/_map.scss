@@ -1,0 +1,34 @@
+//Styles the hero on the map page
+.mapHero {
+    height: 20rem;
+    background: no-repeat center/cover url("../assets/photos/pexels-rudolf-kirchner-2759804.jpg");
+}
+//Stying for the pills on the hotel page
+.hotelPills {
+    li {
+        width: 15rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        border-radius: 1rem !important;
+        max-width: 15%;
+    }
+}
+//Styling for the hotel cards
+.hotel {
+    background-color: #ffffff;
+    color: $color-darkish;
+    max-height: 15rem;
+    width: 25rem;
+    box-shadow: 0 0 .5rem #000;
+    img {
+        height: 100%;
+    }
+
+}
+.hotelcontainer {
+    float: left;
+}
+//Styling for the google maps view
+iframe {
+    height: 50rem;
+}

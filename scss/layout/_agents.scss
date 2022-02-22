@@ -1,0 +1,55 @@
+//Styles the hero on the agents page
+.agentsHero {
+    height: 20rem;
+    background: no-repeat center/cover url("../assets/photos/pexels-joao-aguiar-7777900.jpg");
+    color: #ffffff;
+    h2 {
+        font-weight: 300;
+        font-size: 5rem;
+    }
+    font-family: "Bebas Neue", cursive;
+}
+//Controls the margins for the first two agents on the agents page
+.firstAgents {
+    h3 {
+        margin: 1rem;
+    }
+    img {
+        margin: 1rem;
+    }
+    p {
+        max-width: 20rem;
+        margin: 1rem;
+    }
+}
+.kelsi {
+    width: 100%;
+    div {
+        height: fit-content;
+        width: fit-content;
+    }
+}
+//Controls the styling for the last two agents
+.lastAgent {
+    background-color: #ffffff;
+    color: $color-dark;
+    width: 90%;
+    h3 {
+        margin: 1rem;
+    }
+    img {
+        margin: 1rem;
+        max-height: 15rem;
+    }
+    p {
+        max-width: 20rem;
+        max-height: 7.5rem;
+        margin-bottom: 1rem;
+    }
+}
+//Styling for a specific button
+.viewMoreButton {
+    font-weight: bold;
+    width: 25%;
+    height: 5rem;
+}
